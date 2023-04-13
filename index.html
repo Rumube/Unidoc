@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>proyect_name</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!--Left Panel / Title - Tabs - Hierarchy-->
+    <div class="leftPanel">
+        <!--TITLE-->
+        <div class="leftTopPanel">
+            <div class="leftTopPanelTitle">proyect_name</div>
+            <div class="leftTopPanelIcon"><img class="logoTitle" src="src\unity-69-logo-png-transparent.png" alt="logo" /></div>
+        </div>
+        <div class="customHr">.</div>
+        <!--TABS-->
+        <div class="tab">
+            <button class="tablinks" id="id_tab_Code" onclick="openTab('Code')">CODE</button>
+            <button class="tablinks" id="id_tab_Prefabs" onclick="openTab('Prefabs')">PREFABS</button>
+            <button class="tablinks" id="id_tab_Scenes" onclick="openTab('Scenes')">SCENES</button>
+            <button class="tablinks" id="id_tab_Art" onclick="openTab('Art')">ART</button>
+        </div>
+
+        <!--HIERARCHY-->
+        <!--CODE HIERARCHY-->
+        <div id="id_hier_Code" class="tab_content">
+            <ul>
+                <li>
+                    <span class="caret"><span class="selectable">Connection</span></span>
+                    <ul class="nested">
+                        <li class="selectable" onclick="clickedElement('Code_Connection_Server')" >Server</li>
+                        <li class="selectable">NetworkManager</li>
+                        <li>
+                            <span class="caret"><span class="selectable">Client</span></span>
+                            <ul class="nested">
+                                <li class="selectable">Client</li>
+                                <li class="selectable">ClientHandle</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="caret"><span class="selectable">Games</span></span>
+                    <ul class="nested">
+                        <li class="selectable">Disparos</li>
+                        <li class="selectable">Puzles</li>
+                    </ul>
+                </li>
+                <li class="selectable">Ranking</li>
+            </ul>
+        </div>
+
+        <!--PREFABS HIERARCHY-->
+        <div id="id_hier_Prefabs" class="tab_content">
+            <ul>
+                <li class="selectable">Environment</li>
+                <li class="selectable">Collectibles</li>
+                <li>
+                    <span class="caret"><span class="selectable">Characters</span></span>
+                    <ul class="nested">
+                        <li class="selectable">NPCs</li>
+                        <li>
+                            <span class="caret"><span class="selectable">Enemys</span></span>
+                            <ul class="nested">
+                                <li class="selectable">Goblin</li>
+                                <li class="selectable">Orc</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="selectable">Player</li>
+            </ul>
+        </div>
+
+        <!--SCENES HIERARCHY-->
+        <div id="id_hier_Scenes" class="tab_content">
+            <ul>
+                <li class="selectable">Menus</li>
+                <li class="selectable">Minigames</li>
+                <li>
+                    <span class="caret"><span class="selectable">Levels</span></span>
+                    <ul class="nested">
+                        <li>
+                            <span class="caret"><span class="selectable">Zone_1</span></span>
+                            <ul class="nested">
+                                <li class="selectable">Forest</li>
+                                <li class="selectable">Orc_Village</li>
+                            </ul>
+                        </li>
+                        <li class="selectable">Zone_2</li>
+                        <li class="selectable">Zone_3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--ART HIERARCHY-->
+        <div id="id_hier_Art" class="tab_content">
+            <ul>
+                <li class="selectable">Music</li>
+                <li>
+                    <span class="caret"><span class="selectable">SFX</span></span>
+                    <ul class="nested">
+                        <li class="selectable">Environment</li>
+                        <li>
+                            <span class="caret"><span class="selectable">Movement</span></span>
+                            <ul class="nested">
+                                <li class="selectable">sfx_player_run</li>
+                                <li class="selectable">sfx_player_jump</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="selectable">Videos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Right Panel-->
+    <div class="rightPanel">
+        <div id="id_panel_Code" class="tab_content">
+            <h3>Code</h3>
+            <p>CodeCodeCodeCodeCodeCodeCode</p>
+        </div>
+
+        <div id="id_panel_Prefabs" class="tab_content">
+            <h3>Prefabs</h3>
+            <p>PrefabsPrefabsPrefabsPrefabsPrefabs</p>
+        </div>
+
+        <div id="id_panel_Scenes" class="tab_content">
+            <h3>Scenes</h3>
+            <p>ScenesScenesScenesScenes</p>
+        </div>
+        <div id="id_panel_Art" class="tab_content">
+            <h3>Art</h3>
+            <p>ArtArtArtArtArt</p>
+        </div>
+    </div>
+</body>
+</html>
